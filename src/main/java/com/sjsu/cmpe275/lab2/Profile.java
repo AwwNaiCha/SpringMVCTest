@@ -1,4 +1,4 @@
-package com.sjsu.cmpe275.lab2.domain;
+package com.sjsu.cmpe275.lab2;
 
 import org.springframework.boot.orm.jpa.EntityScan;
 
@@ -13,38 +13,38 @@ import javax.persistence.*;
 public class Profile {
 
     @Id
-    @Column(name = "ID")
+    //@Column(name = "ID")
     private String id;
 
-    @Column(name = "FIRSTNAME")
+    //@Column(name = "FIRSTNAME")
     private String firstname;
 
-    @Column(name = "LASTNAME")
+    //@Column(name = "LASTNAME")
     private String lastname;
 
-    @Column(name = "EMAIL")
+    //@Column(name = "EMAIL")
     private String email;
 
-    @Column(name = "ADDRESS")
+    //@Column(name = "ADDRESS")
     private String address;
 
-    @Column(name = "ORGANIZATION")
+    //@Column(name = "ORGANIZATION")
     private String organization;
 
-    @Column(name = "ABOUTMYSELF")
+    //@Column(name = "ABOUTMYSELF")
     private String aboutMyself;
 
-    public Profile() { }
-
-    public Profile(String firstname, String lastname, String email,
-                   String address, String organization, String aboutMyself) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.email = email;
-        this.address = address;
-        this.organization = organization;
-        this.aboutMyself = aboutMyself;
-    }
+//    public Profile() { }
+//
+//    public Profile(String firstname, String lastname, String email,
+//                   String address, String organization, String aboutMyself) {
+//        this.firstname = firstname;
+//        this.lastname = lastname;
+//        this.email = email;
+//        this.address = address;
+//        this.organization = organization;
+//        this.aboutMyself = aboutMyself;
+//    }
 
     public String getId() {
         return id;
@@ -102,17 +102,17 @@ public class Profile {
         this.aboutMyself = aboutMyself;
     }
 
-    @Override
-    public String toString() {
-        return "Profile{" +
-                "id='" + id + '\'' +
-                ", firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", email='" + email + '\'' +
-                ", address='" + address + '\'' +
-                ", organization='" + organization + '\'' +
-                ", aboutMyself='" + aboutMyself + '\'' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Profile{" +
+//                "id='" + id + '\'' +
+//                ", firstname='" + firstname + '\'' +
+//                ", lastname='" + lastname + '\'' +
+//                ", email='" + email + '\'' +
+//                ", address='" + address + '\'' +
+//                ", organization='" + organization + '\'' +
+//                ", aboutMyself='" + aboutMyself + '\'' +
+//                '}';
+//    }
 
 }

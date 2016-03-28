@@ -1,15 +1,45 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>CMPE275 Lab2</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8"></meta>
+    <title>CMPE275 Lab2 Group **: Profile</title>
 </head>
 <body>
-<tr th:each="profile : ${profileList}">
-    <td th:text="${profile.id}">1</td>
-    <td><a href="#" th:text="${profile.firstname}">Title ...</a></td>
-    <td th:text="${profile.lastname}">Text ...</td>
-    <td><br/></td>
-</tr>
+<h2>Create New User</h2>
+<form action="#" th:action="@{/profile}" th:object="${profile}" method="post">
+    <table>
+        <tr>
+            <td>UserID:</td>
+            <td><input type="text" th:field="*{id}" /></td>
+        </tr>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" th:field="*{firstname}" /></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" th:field="*{lastname}" /></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" th:field="*{email}" /></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><input type="text" th:field="*{address}" /></td>
+        </tr>
+        <tr>
+            <td>Organization:</td>
+            <td><input type="text" th:field="*{organization}" /></td>
+        </tr>
+        <tr>
+            <td>About Myself:</td>
+            <td><input type="text" th:field="*{aboutMyself}" /></td>
+        </tr>
+        <tr>
+            <td><button type="submit" name="action" value="create">Create</button></td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
