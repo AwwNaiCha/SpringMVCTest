@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>CMPE275 Lab2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<tr th:each="profile : ${profileList}">
+    <td th:text="${profile.id}">1</td>
+    <td><a href="#" th:text="${profile.firstname}">Title ...</a></td>
+    <td th:text="${profile.lastname}">Text ...</td>
+    <td><br/></td>
+</tr>
+</body>
+</html>
