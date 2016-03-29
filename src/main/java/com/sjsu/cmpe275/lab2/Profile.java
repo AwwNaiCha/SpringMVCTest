@@ -32,7 +32,7 @@ public class Profile {
     private String organization;
 
     //@Column(name = "ABOUTMYSELF")
-    private String aboutMyself;
+    private String aboutmyself;
 
 //    public Profile() { }
 //
@@ -94,12 +94,12 @@ public class Profile {
         this.organization = organization;
     }
 
-    public String getAboutMyself() {
-        return aboutMyself;
+    public String getAboutmyself() {
+        return aboutmyself;
     }
 
-    public void setAboutMyself(String aboutMyself) {
-        this.aboutMyself = aboutMyself;
+    public void setAboutmyself(String aboutmyself) {
+        this.aboutmyself = aboutmyself;
     }
 
 //    @Override

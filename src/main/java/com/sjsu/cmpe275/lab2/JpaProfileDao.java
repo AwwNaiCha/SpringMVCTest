@@ -1,11 +1,9 @@
 package com.sjsu.cmpe275.lab2;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -29,7 +27,7 @@ public class JpaProfileDao implements ProfileDao {
         updated.setLastname(profile.getLastname());
         updated.setAddress(profile.getAddress());
         updated.setEmail(profile.getEmail());
-        updated.setAboutMyself(profile.getAboutMyself());
+        updated.setAboutmyself(profile.getAboutmyself());
         updated.setOrganization(profile.getOrganization());
         return updated;
 

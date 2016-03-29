@@ -8,19 +8,6 @@
 
 <h2>Profile</h2>
 <form action="#" th:action="@{/profile/{id}(id=${profile.id})}" th:object="${profile}" method="post">
-    <!--table>
-    <tr><td><p>UserID: <span th:text="${profile.id}"></span></p></td></tr>
-    <p>First Name: <input type="text" th:field="*{firstname}" /></p>
-    <p>Last Name: <input type="text" th:field="*{lastname}" /></p>
-    <p>Email: <input type="text" th:field="*{email}" /></p>
-    <p>Address: <input type="text" th:field="*{address}" /></p>
-    <p>Organization: <input type="text" th:field="*{organization}" /></p>
-    <p>About Myself: <input type="text" th:field="*{aboutMyself}" /></p>
-    <p>
-        <button type="submit" name="action" value="update">Update</button>
-        <button type="submit" name="action" value="delete">Delete</button>
-    </p>
-    </table-->
     <table>
         <tr>
             <td>UserID:</td>
@@ -48,7 +35,7 @@
         </tr>
         <tr>
             <td>About Myself:</td>
-            <td><input type="text" th:field="*{aboutMyself}" /></td>
+            <td><input type="text" th:field="*{aboutmyself}" /></td>
         </tr>
         <tr>
             <td><button type="submit" name="action" value="update">Update</button></td>
