@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.RestAssign273ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-03-30T00:54:48" hostname="Helias-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="contextLoads" classname="com.example.RestAssign273ApplicationTests" time="0.004"/>
+  <system-out><![CDATA[17:54:43.919 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.RestAssign273ApplicationTests]
+17:54:43.925 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:54:43.932 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:54:43.943 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.RestAssign273ApplicationTests] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+17:54:43.969 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@186f3113 declaringClass = 'com.example.RestAssign273ApplicationTests', classes = '{class com.sjsu.cmpe275.lab2.RestAssign273Application}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+17:54:43.978 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.example.RestAssign273ApplicationTests]: class path resource [com/example/RestAssign273ApplicationTests-context.xml] does not exist
+17:54:43.979 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.example.RestAssign273ApplicationTests]: class path resource [com/example/RestAssign273ApplicationTestsContext.groovy] does not exist
+17:54:43.979 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.RestAssign273ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:54:43.981 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.RestAssign273ApplicationTests]
+17:54:43.984 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.RestAssign273ApplicationTests]: using defaults.
+17:54:43.991 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:54:44.015 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@50e7a9a9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@33603d7d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6fb6e33b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@11889037, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7ccfc94e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4e76987f]
+17:54:44.019 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.RestAssign273ApplicationTests]
+17:54:44.019 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.RestAssign273ApplicationTests]
+17:54:44.020 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.RestAssign273ApplicationTests]
+17:54:44.021 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.RestAssign273ApplicationTests]
+17:54:44.025 [Test worker] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@51506393 testClass = RestAssign273ApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@45dab77 testClass = RestAssign273ApplicationTests, locations = '{}', classes = '{class com.sjsu.cmpe275.lab2.RestAssign273Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+17:54:44.026 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.RestAssign273ApplicationTests]
+17:54:44.026 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.RestAssign273ApplicationTests]
+17:54:44.029 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@51506393 testClass = RestAssign273ApplicationTests, testInstance = com.example.RestAssign273ApplicationTests@74e6f284, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@45dab77 testClass = RestAssign273ApplicationTests, locations = '{}', classes = '{class com.sjsu.cmpe275.lab2.RestAssign273Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+17:54:44.120 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+17:54:44.122 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:54:44.122 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:54:44.124 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+2016-03-29 17:54:44.958  INFO 47892 --- [    Test worker] c.example.RestAssign273ApplicationTests  : Starting RestAssign273ApplicationTests on Helias-MacBook-Pro.local with PID 47892 (/Users/huimin/Downloads/RestAssign273/build/classes/test started by huimin in /Users/huimin/Downloads/RestAssign273)
+2016-03-29 17:54:44.958  INFO 47892 --- [    Test worker] c.example.RestAssign273ApplicationTests  : No active profile set, falling back to default profiles: default
+2016-03-29 17:54:45.217  INFO 47892 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7ed321fe: startup date [Tue Mar 29 17:54:45 PDT 2016]; root of context hierarchy
+2016-03-29 17:54:46.793  INFO 47892 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-03-29 17:54:46.825  INFO 47892 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-03-29 17:54:46.917  INFO 47892 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-03-29 17:54:46.920  INFO 47892 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-03-29 17:54:46.923  INFO 47892 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-03-29 17:54:47.134  INFO 47892 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-03-29 17:54:47.565  INFO 47892 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-29 17:54:47.577  INFO 47892 --- [    Test worker] o.h.e.jdbc.internal.LobCreatorBuilder    : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-29 17:54:47.717  INFO 47892 --- [    Test worker] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-03-29 17:54:48.036  INFO 47892 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2016-03-29 17:54:48.036  INFO 47892 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2016-03-29 17:54:48.038  INFO 47892 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2016-03-29 17:54:48.056  INFO 47892 --- [    Test worker] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: jpa.PROFILE_TABLE
+2016-03-29 17:54:48.056  INFO 47892 --- [    Test worker] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [firstname, address, organization, aboutmyself, id, email, lastname]
+2016-03-29 17:54:48.056  INFO 47892 --- [    Test worker] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2016-03-29 17:54:48.057  INFO 47892 --- [    Test worker] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [id_unique, primary]
+2016-03-29 17:54:48.059  INFO 47892 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2016-03-29 17:54:48.954  INFO 47892 --- [    Test worker] c.example.RestAssign273ApplicationTests  : Started RestAssign273ApplicationTests in 4.826 seconds (JVM running for 5.917)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

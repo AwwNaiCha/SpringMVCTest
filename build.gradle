@@ -15,6 +15,22 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
 apply plugin: 'idea'
+apply plugin: 'war'
+
+
+war {
+	baseName = 'restassign273'
+	version =  '0.0.1-SNAPSHOT'
+}
+
+repositories {
+	jcenter()
+	maven { url "http://repo.spring.io/libs-snapshot" }
+}
+
+configurations {
+	providedRuntime
+}
 
 jar {
 	baseName = 'restassign273'
@@ -46,6 +62,8 @@ dependencies {
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile("junit:junit")
+
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
 
 
